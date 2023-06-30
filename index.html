@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaging.com</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Imaging<span style="color: red;;">.com</span></h1>
+    </nav>
+
+    <div class="container">
+        <div class="image-container">
+            <input type="file" accept="image/*" hidden class="file">
+            <img src="./icons8-upload-80.png" alt="" class="preview-image">
+            <p>Drag & Drop or <span style="color: blue; cursor: pointer;">Click</span> to upload file!</p>
+        </div>
+
+        <div class="controls">
+            <h3>Controls</h3>
+            <div class="content">
+                <div class="fields">
+                    <div class="field">
+                        <label>Image width</label>
+                        <input type="number" class="width-input">
+                    </div>
+                    <div class="field">
+                        <label>Image height</label>
+                        <input type="number" class="height-input">
+                    </div>
+                    <div class="field" style="height: 10px;">
+                        <div class="checkbox">
+                            <input type="checkbox" id="ratio" class="ratio" checked>
+                            <label for="ratio">Lock aspect ratio</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Select Quality</label>
+                        <select name="" id="" class="quality">
+                            <option value="1.0">100%</option>
+                            <option value="0.8">80%</option>
+                            <option value="0.6">60%</option>
+                            <option value="0.4">40%</option>
+                            <option value="0.2">20%</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <button class="download">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
